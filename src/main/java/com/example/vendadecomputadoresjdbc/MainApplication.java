@@ -20,14 +20,8 @@ public class MainApplication extends Application {
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-     //   launch();
-        Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","senha@123");
-        conexao.realizaConexao();
-        Pessoa p = new Pessoa();
-        Cliente cliente = new Cliente();
-       // p.buscaPessoa("5454",conexao.getConnection());
-        cliente.verificaSeECliente("5555555",conexao);
-//
+        launch();
+
 
     }
 
