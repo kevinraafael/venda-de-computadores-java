@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/assets/PC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/itemVenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/ItemVenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/itemVenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/itemVenda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +86,7 @@
       <workItem from="1666373380042" duration="6223000" />
       <workItem from="1666454237673" duration="5799000" />
       <workItem from="1666496283842" duration="806000" />
-      <workItem from="1666558522143" duration="7941000" />
+      <workItem from="1666558522143" duration="8257000" />
     </task>
     <task id="LOCAL-00001" summary="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;">
       <created>1666496943962</created>
@@ -128,12 +121,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java</url>
-          <line>81</line>
+          <line>131</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java</url>
-          <line>80</line>
+          <line>130</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

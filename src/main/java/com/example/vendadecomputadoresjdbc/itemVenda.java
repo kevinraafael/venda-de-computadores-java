@@ -1,60 +1,62 @@
 package com.example.vendadecomputadoresjdbc;
 
-import java.util.List;
+import java.util.ArrayList;
 
-public class itemVenda {
-    private String id;
+public class ItemVenda {
     private int qtdVendida;
-    private double valorVendido;
-    private String vendaId;
-    private String computadorId;
-    private List<Computador> listaDeComputadores;
+    private float valorVendido;
+    private ArrayList<Computador> computadores = new ArrayList<>();
 
-    public String getId() {
-        return id;
+    public ItemVenda() {
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public ItemVenda(int qtdVendida, float valorVendido, ArrayList<Computador> computadores) {
+        this.qtdVendida = qtdVendida;
+        this.valorVendido = valorVendido;
+        this.computadores = computadores;
     }
 
     public int getQtdVendida() {
-        return qtdVendida;
+        return this.qtdVendida;
     }
 
     public void setQtdVendida(int qtdVendida) {
         this.qtdVendida = qtdVendida;
     }
 
-    public double getValorVendido() {
-        return valorVendido;
+    public float getValorVendido() {
+        return this.valorVendido;
     }
 
-    public void setValorVendido(double valorVendido) {
-        this.valorVendido = valorVendido;
+    public void setValorVendido(float preco) {
+        this.valorVendido = preco;
     }
 
-    public String getVendaId() {
-        return vendaId;
+    public ArrayList<Computador> getComputadores() {
+        return this.computadores;
     }
 
-    public void setVendaId(String vendaId) {
-        this.vendaId = vendaId;
+    public void setComputadores(ArrayList<Computador> computadores) {
+        this.computadores = computadores;
     }
 
-    public String getComputadorId() {
-        return computadorId;
+    public ItemVenda qtdVendida(int qtdVendida) {
+        setQtdVendida(qtdVendida);
+        return this;
     }
 
-    public void setComputadorId(String computadorId) {
-        this.computadorId = computadorId;
+    public ItemVenda valorVendido(float valorVendido) {
+        setValorVendido(valorVendido);
+        return this;
     }
 
-    public List<Computador> getListaDeComputadores() {
-        return listaDeComputadores;
+    public ItemVenda computadores(ArrayList<Computador> computadores) {
+        setComputadores(computadores);
+        return this;
     }
 
-    public void setListaDeComputadores(List<Computador> listaDeComputadores) {
-        this.listaDeComputadores = listaDeComputadores;
+    // TODO
+    public void criaItem() {
+
     }
 }
