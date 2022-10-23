@@ -66,7 +66,7 @@ public class Pessoa {
                 pessoa.setNome(resultSet.getString("nome"));
                 pessoa.setEndereco(resultSet.getString("endereco"));
                 pessoa.setTelefone(resultSet.getString("telefone"));
-                conexao.close();
+
                 System.out.println(pessoa.getNome());
                  return  pessoa;
 
@@ -74,7 +74,7 @@ public class Pessoa {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        conexao.close();
+
         return null;
     }
 }

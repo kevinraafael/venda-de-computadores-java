@@ -68,24 +68,24 @@
          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
          <ImageView fitHeight="164.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <image>
-               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+                <Image url="@../../../../assets/PC.jpg" />
             </image>
          </ImageView>
          <ImageView fitHeight="159.0" fitWidth="230.0" layoutX="165.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <image>
-               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+                <Image url="@../../../../assets/PC.jpg" />
             </image>
          </ImageView>
          <ImageView fitHeight="165.0" fitWidth="230.0" layoutX="458.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
             <image>
-               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+                <Image url="@../../../../assets/PC.jpg" />
             </image>
          </ImageView>
          <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="313.0" text="Informações do computador" GridPane.columnIndex="2" GridPane.rowIndex="1" />
          <ImageView fitHeight="164.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
             <image>
-               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+                <Image url="@../../../../assets/PC.jpg" />
             </image>
          </ImageView>
          <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
@@ -94,14 +94,14 @@
          <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
          <ImageView fitHeight="164.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5">
             <image>
-               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+               <Image url="@../../../../assets/PC.jpg" />
             </image>
          </ImageView>
          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="314.0" text="Informações do computador" GridPane.columnIndex="3" GridPane.rowIndex="6" />
          <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
          <ImageView fitHeight="165.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
             <image>
-               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+                <Image url="@../../../../assets/PC.jpg" />
             </image>
          </ImageView>
          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="313.0" text="Informações do computador" GridPane.columnIndex="4" GridPane.rowIndex="1" />

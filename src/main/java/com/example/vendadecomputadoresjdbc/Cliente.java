@@ -21,7 +21,7 @@ public class Cliente {
             String sql = "select pessoaid from cliente where pessoaid=" + "'" + pessoaEncontrada.getId() + "'";
             conexao.realizaConexao();
             ResultSet resultSet = conexao.getConnection().createStatement().executeQuery(sql);
-            conexao.getConnection().close();
+
             if (resultSet.next() && resultSet.getString("pessoaid").equals(pessoaEncontrada.getId())) {
                 Cliente cliente = new Cliente();
                 ehCliente = true;
