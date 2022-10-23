@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/GitLink.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,8 +76,16 @@
       <workItem from="1666352263456" duration="12435000" />
       <workItem from="1666373380042" duration="6223000" />
       <workItem from="1666454237673" duration="5799000" />
-      <workItem from="1666496283842" duration="426000" />
+      <workItem from="1666496283842" duration="806000" />
     </task>
+    <task id="LOCAL-00001" summary="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;">
+      <created>1666496943962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666496943962</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
