@@ -3,20 +3,25 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox minHeight="720.0" minWidth="1280.0" prefHeight="471.0" prefWidth="686.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendadecomputadoresjdbc.CarrinhoController">
+<VBox minHeight="720.0" minWidth="1276.0" prefHeight="889.0" prefWidth="1276.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendadecomputadoresjdbc.CarrinhoController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <GridPane minWidth="70.0" prefHeight="85.0" prefWidth="1197.0">
+   <GridPane minWidth="70.0" prefHeight="116.0" prefWidth="558.0">
      <columnConstraints>
-       <ColumnConstraints hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="181.0" />
-       <ColumnConstraints hgrow="SOMETIMES" maxWidth="1059.0" minWidth="10.0" prefWidth="1059.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="151.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="1059.0" minWidth="10.0" prefWidth="158.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="1059.0" minWidth="10.0" prefWidth="949.0" />
      </columnConstraints>
      <rowConstraints>
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -24,11 +29,155 @@
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
-         <Label maxWidth="100.0" text="CPF do Cliente" />
-         <TextField fx:id="cpfCliente" maxWidth="70.0" minWidth="150.0" prefHeight="26.0" prefWidth="0.0" GridPane.columnIndex="1" />
-         <Label text="Nome do Cliente" GridPane.rowIndex="1" />
-         <Label fx:id="nomeCliente" prefHeight="18.0" prefWidth="137.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <Label text="CPF do Cliente" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+         <TextField fx:id="cpfCliente" maxWidth="70.0" minWidth="150.0" opacity="0.35" prefHeight="26.0" prefWidth="0.0" text="Digite um CPF" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+         <Label text="Nome do Cliente:" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+         <Label fx:id="nomeCliente" prefHeight="33.0" prefWidth="192.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <Button alignment="CENTER" contentDisplay="TOP" onAction="#buscaCliente" text="Buscar" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" GridPane.columnIndex="2" />
       </children>
    </GridPane>
-    <Button onAction="#buscaCliente" text="Hello!" />
+   <GridPane hgap="40.0" prefHeight="570.0" prefWidth="1242.0">
+     <columnConstraints>
+         <ColumnConstraints />
+       <ColumnConstraints />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="296.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="309.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="617.0" minWidth="10.0" prefWidth="319.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints maxHeight="186.0" minHeight="10.0" prefHeight="168.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="89.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="105.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints maxHeight="156.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="181.0" minHeight="10.0" prefHeight="166.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="156.0" minHeight="0.0" prefHeight="45.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="39.0" valignment="CENTER" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <padding>
+         <Insets left="100.0" right="100.0" />
+      </padding>
+      <children>
+         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+         <ImageView fitHeight="164.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <image>
+               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="159.0" fitWidth="230.0" layoutX="165.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <image>
+               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="165.0" fitWidth="230.0" layoutX="458.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <image>
+               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+            </image>
+         </ImageView>
+         <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="313.0" text="Informações do computador" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         <ImageView fitHeight="164.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+            <image>
+               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+            </image>
+         </ImageView>
+         <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="314.0" text="Informações do computador" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="313.0" text="Informações do computador" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         <ImageView fitHeight="164.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <image>
+               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="314.0" text="Informações do computador" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+         <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+         <ImageView fitHeight="165.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+            <image>
+               <Image url="@../../../../../../../../Desktop/DEV/UFMS/APSOO/Trabalho/imagens/PC.jpg" />
+            </image>
+         </ImageView>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="313.0" text="Informações do computador" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="313.0" text="Informações do computador" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+         <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         <Button mnemonicParsing="false" text="Adicionar ao carrinho" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+         <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+         <Separator prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         <Separator prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+         <Label text="R$0000,00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="R$0000,00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="R$0000,00" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="R$0000,00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+         <Label text="R$0000,00" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+         <Label text="R$0000,00" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+         </Label>
+      </children>
+   </GridPane>
+   <GridPane>
+     <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="1038.0" minWidth="10.0" prefWidth="1038.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="1038.0" minWidth="10.0" prefWidth="274.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="615.0" minWidth="10.0" prefWidth="352.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Label text="R$0000,00" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets />
+            </GridPane.margin>
+            <font>
+               <Font name="Arial" size="24.0" />
+            </font>
+         </Label>
+         <Label text="Total:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+            <GridPane.margin>
+               <Insets right="10.0" />
+            </GridPane.margin>
+            <font>
+               <Font name="Arial Black" size="24.0" />
+            </font>
+         </Label>
+         <Label text="Itens no carrinho:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+         <Label text="2" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <padding>
+               <Insets left="5.0" />
+            </padding>
+         </Label>
+         <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="583.0" text="Finalizar compras" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <padding>
+               <Insets left="60.0" />
+            </padding>
+         </Button>
+      </children>
+   </GridPane>
 </VBox>

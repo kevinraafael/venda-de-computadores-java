@@ -26,7 +26,7 @@ public class CarrinhoController {
     @FXML
     protected  void  buscaCliente(ActionEvent event) throws SQLException, ClassNotFoundException {
         Pessoa p = new Pessoa();
-        Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","1234");
+        Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","senha@123");
         conexao.realizaConexao();
         Pessoa pessoa = new Pessoa();
         Cliente cliente = new Cliente();
