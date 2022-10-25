@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Criação de tela de finalizar vendas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Venda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/assets/PC.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" afterDir="false" />
