@@ -88,18 +88,20 @@ public class CarrinhoController implements Initializable {
                     if (pcIndex == computadores.size() - 1) {
                         String pcTitle = computadores.get(pcIndex).getModelo() + " "
                                 + computadores.get(pcIndex).getProcessador();
+                        String pcValor = computadores.get(pcIndex).getValor().toString();
 
                         listaComputador.add(
-                                new ComputadorComponent("/assets/PC.jpg", pcTitle, "10.0",
+                                new ComputadorComponent("/assets/PC.jpg", pcTitle, pcValor,
                                         totalCarrinho, totalQntCarrinho),
                                 collIndex, rowIndex);
                         return;
                     } else {
                         String pcTitle = computadores.get(pcIndex).getModelo() + " "
                                 + computadores.get(pcIndex).getProcessador();
+                        String pcValor = computadores.get(pcIndex).getValor().toString();
 
                         listaComputador.add(
-                                new ComputadorComponent("/assets/PC.jpg", pcTitle, "10.0",
+                                new ComputadorComponent("/assets/PC.jpg", pcTitle, pcValor,
                                         totalCarrinho, totalQntCarrinho),
                                 collIndex, rowIndex);
                     }
