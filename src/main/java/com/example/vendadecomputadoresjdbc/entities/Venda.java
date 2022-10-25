@@ -67,7 +67,7 @@ public class Venda {
      * @param conexao
      */
     public String insert(Connection conexao){
-        String sql = "INSERT INTO venda (funcionarioid,clienteid,valor,pagamentoid) VALUES(?,?,?,?) ";
+        String sql = "INSERT INTO venda (funcionarioid,clienteid,valor,pagamentoid) VALUES(?,?,?,?)  RETURNING id";
         if(conexao != null){
             try {
                 PreparedStatement prepare_statement = conexao.prepareStatement(sql);
@@ -76,7 +76,10 @@ public class Venda {
                 prepare_statement.setDouble(3, this.valor);
                 prepare_statement.setObject(4, UUID.fromString(this.pagamentoId));
                 System.out.println(prepare_statement);
-                prepare_statement.execute();
+                ResultSet set = prepare_statement.executeQuery();
+                if(set.next()){
+                    this.setId(set.getString(1));
+                }
 
             }catch (Exception e){
                 throw new RuntimeException(e);

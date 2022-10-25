@@ -37,7 +37,7 @@ public class Pagamento {
     }
 
     public void insert(Connection conexao){
-        String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES (?,?,?,?)";
+        String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES (?,?,?,?) RETURNING id";
         if(conexao != null){
             try {
                 PreparedStatement prepare_statement = conexao.prepareStatement(sql);
@@ -46,7 +46,10 @@ public class Pagamento {
                 prepare_statement.setInt(3, this.parcelamento);
                 prepare_statement.setString(4,this.descricao);
                 System.out.println(prepare_statement);
-                prepare_statement.execute();
+                ResultSet set = prepare_statement.executeQuery();
+                if(set.next()){
+                    this.setId(set.getString(1));
+                }
             }catch (Exception e){
                 throw new RuntimeException(e);
             }
