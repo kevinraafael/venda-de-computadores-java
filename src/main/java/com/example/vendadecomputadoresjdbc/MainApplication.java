@@ -1,5 +1,8 @@
 package com.example.vendadecomputadoresjdbc;
 
+import com.example.vendadecomputadoresjdbc.entities.ItemVenda;
+import com.example.vendadecomputadoresjdbc.entities.Pagamento;
+import com.example.vendadecomputadoresjdbc.entities.Venda;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -46,19 +49,23 @@ public class MainApplication extends Application {
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-//        Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","senha@123");
-//        conexao.realizaConexao();
-//        ItemVenda p = new ItemVenda(2,100,"4805372b-2ebf-40c1-a722-e5e3654f55db","7314581c-08ea-4370-91f2-3d40a5225863");
+        Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","senha@123");
+        conexao.realizaConexao();
+//        itemVenda p = new itemVenda(2,100,"4805372b-2ebf-40c1-a722-e5e3654f55db","7314581c-08ea-4370-91f2-3d40a5225863");
 //        p.insert(conexao.getConnection());
-//        conexao.getConnection().close();
-//        Venda v = new Venda("5b6c3c52-eb0f-46cd-b13b-c3a2dcc7c5c2","105c63c9-51de-4542-90ee-92e1ee1c92be",1000,"5c4e494a-0c36-4734-b3ad-a84c196e3c72");
-//        v.insert(conexao.getConnection());
-        launch();
-        //launch();
+//
+
 //        Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","senha@123");
 //        conexao.realizaConexao();
-//        itemVenda itemVenda = new itemVenda(1,100,"8796943a-73e8-41b1-88bb-a34464614187","7314581c-08ea-4370-91f2-3d40a5225863");
+//        ItemVenda itemVenda = new ItemVenda(1,100,"8796943a-73e8-41b1-88bb-a34464614187","7314581c-08ea-4370-91f2-3d40a5225863");
 //        itemVenda.insert(conexao.getConnection());
+        Pagamento pag = new Pagamento(100.3,66.6,1,"descricao");
+        pag.insert(conexao.getConnection());
+        Venda v = new Venda("5b6c3c52-eb0f-46cd-b13b-c3a2dcc7c5c2","105c63c9-51de-4542-90ee-92e1ee1c92be",1000,pag.getId());
+        v.insert(conexao.getConnection());
+//        itemVenda itemVenda = new itemVenda(1,100,v.getId(),"7314581c-08ea-4370-91f2-3d40a5225863");
+//        itemVenda.insert(conexao.getConnection());
+        launch();
     }
 
 }
