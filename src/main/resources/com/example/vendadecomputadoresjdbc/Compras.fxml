@@ -9,7 +9,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendadecomputadoresjdbc.controllers.ComprasController">
    <children>
       <ListView fx:id="lvComputador" layoutX="88.0" layoutY="85.0" prefHeight="200.0" prefWidth="420.0" />
       <Label layoutX="90.0" layoutY="386.0" prefHeight="59.0" prefWidth="153.0" text="Total: " textAlignment="CENTER">
@@ -33,7 +34,7 @@
             <RadioButton layoutX="6.0" layoutY="60.0" mnemonicParsing="false" text="Pix" />
          </children>
       </Group>
-      <Button layoutX="104.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="387.0" text="Finalizar Venda" />
+      <Button layoutX="104.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="387.0" text="Finalizar Venda" onAction="#finalizarCompra" />
       <Label layoutX="388.0" layoutY="300.0" text="Itens no carrinho:" />
       <Label layoutX="486.0" layoutY="300.0" text="0" />
       <RadioButton fx:id="formaPagamento" layoutX="444.0" layoutY="378.0" mnemonicParsing="false" text="Crédito" toggleGroup="$formasPagamento" />
