@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox minHeight="720.0" minWidth="1276.0" prefHeight="889.0" prefWidth="1276.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendadecomputadoresjdbc.CarrinhoController">
+<VBox minHeight="720.0" minWidth="1276.0" prefHeight="889.0" prefWidth="1276.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendadecomputadoresjdbc.controllers.CarrinhoController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -93,7 +93,7 @@
                <Insets left="5.0" />
             </padding>
          </Label>
-         <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="277.0" text="Finalizar compras" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+         <Button fx:id="finalizaVenda" mnemonicParsing="false" onAction="#btnFinalizaVenda" prefHeight="30.0" prefWidth="277.0" text="Finalizar compras" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
       </children>
    </GridPane>
 </VBox>

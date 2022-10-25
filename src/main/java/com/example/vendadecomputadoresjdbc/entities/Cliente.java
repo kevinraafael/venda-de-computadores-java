@@ -1,5 +1,7 @@
-package com.example.vendadecomputadoresjdbc;
+package com.example.vendadecomputadoresjdbc.entities;
 
+
+import com.example.vendadecomputadoresjdbc.Conexao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -7,4 +7,8 @@ module com.example.vendadecomputadoresjdbc {
 
     opens com.example.vendadecomputadoresjdbc to javafx.fxml;
     exports com.example.vendadecomputadoresjdbc;
+    exports com.example.vendadecomputadoresjdbc.controllers;
+    opens com.example.vendadecomputadoresjdbc.controllers to javafx.fxml;
+    exports com.example.vendadecomputadoresjdbc.entities;
+    opens com.example.vendadecomputadoresjdbc.entities to javafx.fxml;
 }

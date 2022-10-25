@@ -1,4 +1,4 @@
-package com.example.vendadecomputadoresjdbc;
+package com.example.vendadecomputadoresjdbc.entities;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

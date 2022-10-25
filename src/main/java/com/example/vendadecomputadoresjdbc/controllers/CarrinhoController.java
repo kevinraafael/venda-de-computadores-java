@@ -1,5 +1,10 @@
-package com.example.vendadecomputadoresjdbc;
+package com.example.vendadecomputadoresjdbc.controllers;
 
+import com.example.vendadecomputadoresjdbc.MainApplication;
+import com.example.vendadecomputadoresjdbc.entities.Cliente;
+import com.example.vendadecomputadoresjdbc.entities.Computador;
+import com.example.vendadecomputadoresjdbc.Conexao;
+import com.example.vendadecomputadoresjdbc.entities.Pessoa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -50,7 +55,7 @@ public class CarrinhoController implements Initializable {
          Pessoa p = new Pessoa();
          Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres",
          "postgres",
-         "1234");
+         "senha@123");
          conexao.realizaConexao();
 
          try {
@@ -80,7 +85,7 @@ public class CarrinhoController implements Initializable {
 
             Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres",
                     "postgres",
-                    "1234");
+                    "senha@123");
             conexao.realizaConexao();
             List<Computador> computadores = new Computador().getComputadores(conexao.getConnection());
 
@@ -118,6 +123,11 @@ public class CarrinhoController implements Initializable {
             // throw e;
         }
 
+    }
+
+    @FXML
+    protected void btnFinalizaVenda(ActionEvent e){
+        MainApplication.trocaTela("compras");
     }
 
 }

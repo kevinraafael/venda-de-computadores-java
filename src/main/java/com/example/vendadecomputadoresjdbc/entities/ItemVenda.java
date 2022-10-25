@@ -1,14 +1,10 @@
-package com.example.vendadecomputadoresjdbc;
+package com.example.vendadecomputadoresjdbc.entities;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
-public class itemVenda {
+public class ItemVenda {
     private int qtdVendida;
     private float valorVendido;
     private String vendaID;
@@ -31,10 +27,10 @@ public class itemVenda {
         this.computadorId = computadorId;
     }
 
-    public itemVenda() {
+    public ItemVenda() {
     }
 
-    public itemVenda(int qtdVendida, float valorVendido, String vendaId,String computadorId) {
+    public ItemVenda(int qtdVendida, float valorVendido, String vendaId, String computadorId) {
         this.qtdVendida = qtdVendida;
         this.valorVendido = valorVendido;
         this.vendaID = vendaId;
@@ -57,12 +53,12 @@ public class itemVenda {
         this.valorVendido = preco;
     }
 
-    public itemVenda qtdVendida(int qtdVendida) {
+    public ItemVenda qtdVendida(int qtdVendida) {
         setQtdVendida(qtdVendida);
         return this;
     }
 
-    public itemVenda valorVendido(float valorVendido) {
+    public ItemVenda valorVendido(float valorVendido) {
         setValorVendido(valorVendido);
         return this;
     }
