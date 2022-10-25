@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Valor computador">
+    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Mundança de tela funcionando, reorganização dos arquivos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/controllers/CarrinhoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/ComprasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/controllers/ComprasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Computador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Pagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Venda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/itemVenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/ItemVenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/controllers/ComprasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/controllers/ComprasController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/Compras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/Compras.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +59,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kevin\IdeaProjects\venda-de-computadores-jdbc\src\main\assets" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.vendadecomputadoresjdbc.controllers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -107,7 +101,8 @@
       <workItem from="1666558522143" duration="8257000" />
       <workItem from="1666576485756" duration="5842000" />
       <workItem from="1666654872234" duration="2051000" />
-      <workItem from="1666717683208" duration="5219000" />
+      <workItem from="1666717683208" duration="6452000" />
+      <workItem from="1666725055062" duration="3713000" />
     </task>
     <task id="LOCAL-00001" summary="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;">
       <created>1666496943962</created>
@@ -144,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666666751478</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mundança de tela funcionando, reorganização dos arquivos">
+      <created>1666723923522</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666723923522</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +181,8 @@
     <MESSAGE value="Pagamento" />
     <MESSAGE value="item venda" />
     <MESSAGE value="Inserção" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserção" />
+    <MESSAGE value="Mundança de tela funcionando, reorganização dos arquivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mundança de tela funcionando, reorganização dos arquivos" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

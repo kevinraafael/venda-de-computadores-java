@@ -31,7 +31,7 @@ public class MainApplication extends Application {
 
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setTitle("Hello!");
-        stage.setScene(carrinhoScene);
+        stage.setScene(scene);
         stage.show();
 
     }

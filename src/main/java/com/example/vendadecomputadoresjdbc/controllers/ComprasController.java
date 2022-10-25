@@ -3,7 +3,11 @@ import com.example.vendadecomputadoresjdbc.Conexao;
 import com.example.vendadecomputadoresjdbc.entities.Computador;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 
@@ -13,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ComprasController {
+public class ComprasController implements Initializable {
         @FXML
         private RadioButton formaPagamento;
 
@@ -25,8 +29,11 @@ public class ComprasController {
 
         private ObservableList<Computador> obsListComputadores;
 
+        @FXML
+        private Label totalCarrinho;
 
 
+        @Override
         public void initialize(URL url, ResourceBundle rb) {
                 try {
                         carregaLista();
@@ -38,7 +45,7 @@ public class ComprasController {
         public void carregaLista() throws SQLException, ClassNotFoundException {
                 Computador comp = new Computador();
                 Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres", "postgres",
-                        "1234");
+                        "senha@123");
                 conexao.realizaConexao();
                 try {
                         // Trocar para lista do itemVenda, os computadores que o cliente escolheu,
@@ -53,6 +60,19 @@ public class ComprasController {
 //            informationDialog( event, "Não foi possível carregar a lista de computadores",
 //                    e.toString(), "Tente mais tarde");
                 }
+        }
+        @FXML
+        protected void informationDialogVenda(ActionEvent event) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Sucesso!");
+                alert.setHeaderText("Venda concluída com SUCESSO!");
+                alert.setContentText("Pagamento á vista em dinheiro");
+                alert.showAndWait();
+        }
+
+        @FXML
+        protected void somaTotalValorList(){
+
         }
 }
 

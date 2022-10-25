@@ -9,33 +9,29 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendadecomputadoresjdbc.controllers.ComprasController">
    <children>
       <ListView fx:id="lvComputador" layoutX="88.0" layoutY="85.0" prefHeight="200.0" prefWidth="420.0" />
-      <Label layoutX="90.0" layoutY="386.0" prefHeight="59.0" prefWidth="153.0" text="Total: " textAlignment="CENTER">
+      <Label layoutX="94.0" layoutY="387.0" prefHeight="59.0" prefWidth="196.0" text="Total: R$ " textAlignment="CENTER">
          <font>
             <Font name="Arial Black" size="36.0" />
          </font>
       </Label>
-      <Label layoutX="212.0" layoutY="394.0" text="R$0000,00">
+      <Label fx:id="totalCarrinho" layoutX="279.0" layoutY="395.0" text="8,700.00">
          <font>
             <Font name="Arial" size="36.0" />
          </font>
       </Label>
-      <Group layoutX="439.0" layoutY="372.0">
-         <children>
-            <RadioButton layoutX="5.0" layoutY="23.0" mnemonicParsing="false" text="Débito">
-               <toggleGroup>
-                  <ToggleGroup fx:id="formasPagamento" />
-               </toggleGroup>
-            </RadioButton>
-            <RadioButton layoutX="6.0" layoutY="41.0" mnemonicParsing="false" selected="true" text="Dinheiro" />
-            <RadioButton layoutX="6.0" layoutY="60.0" mnemonicParsing="false" text="Pix" />
-         </children>
-      </Group>
-      <Button layoutX="104.0" layoutY="515.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="387.0" text="Finalizar Venda" />
+      <Group layoutX="439.0" layoutY="372.0" />
+      <Button fx:id="finalizaVenda" layoutX="104.0" layoutY="515.0" mnemonicParsing="false" onAction="#informationDialogVenda" prefHeight="25.0" prefWidth="387.0" text="Finalizar Venda" />
       <Label layoutX="388.0" layoutY="300.0" text="Itens no carrinho:" />
       <Label layoutX="486.0" layoutY="300.0" text="0" />
-      <RadioButton fx:id="formaPagamento" layoutX="444.0" layoutY="378.0" mnemonicParsing="false" text="Crédito" toggleGroup="$formasPagamento" />
+      <RadioButton fx:id="formaPagamento" layoutX="444.0" layoutY="378.0" mnemonicParsing="false" selected="true" text="Dinehiro">
+         <toggleGroup>
+            <ToggleGroup fx:id="formasPagamento" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="443.0" layoutY="407.0" mnemonicParsing="false" text="Débito" toggleGroup="$formasPagamento" />
+      <RadioButton layoutX="443.0" layoutY="437.0" mnemonicParsing="false" text="Crédito" toggleGroup="$formasPagamento" />
+      <RadioButton layoutX="443.0" layoutY="470.0" mnemonicParsing="false" text="Pix" toggleGroup="$formasPagamento" />
    </children>
 </Pane>
