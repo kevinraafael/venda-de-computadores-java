@@ -1,8 +1,10 @@
 package com.example.vendadecomputadoresjdbc;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.UUID;
 
 public class Pagamento {
 
@@ -35,15 +37,20 @@ public class Pagamento {
     }
 
     public void insert(Connection conexao){
-        String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES " +
-                "('"+this.valorTotal+"','"+this.desconto+"','"+this.parcelamento+"','"+this.descricao+"')";
-        try {
-            ResultSet resultSet = conexao.createStatement().executeQuery(sql);
-            this.setId(resultSet.getString("id"));
-            if(resultSet.next()){
+        String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES (?,?,?,?)";
+        if(conexao != null){
+            try {
+                PreparedStatement prepare_statement = conexao.prepareStatement(sql);
+                prepare_statement.setDouble(1,this.valorTotal);
+                prepare_statement.setDouble(2,this.desconto);
+                prepare_statement.setInt(3, this.parcelamento);
+                prepare_statement.setString(4,this.descricao);
+                System.out.println(prepare_statement);
+                prepare_statement.execute();
+            }catch (Exception e){
+                throw new RuntimeException(e);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+
         }
     }
 }

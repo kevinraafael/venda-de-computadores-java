@@ -1,8 +1,10 @@
 package com.example.vendadecomputadoresjdbc;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.UUID;
 
 public class Venda {
     private String id;
@@ -65,14 +67,21 @@ public class Venda {
      * @param conexao
      */
     public String insert(Connection conexao){
-        String sql = "INSERT INTO venda (funcionarioid,clienteid,valor,pagamentoid) VALUES " +
-                "('"+this.funcionarioId+"','"+this.clienteId+"','"+this.valor+"','"+this.pagamentoId+"')";
-        try {
-            ResultSet resultSet = conexao.createStatement().executeQuery(sql);
-            this.id = resultSet.getString("id");
-            System.out.println(resultSet);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        String sql = "INSERT INTO venda (funcionarioid,clienteid,valor,pagamentoid) VALUES(?,?,?,?) ";
+        if(conexao != null){
+            try {
+                PreparedStatement prepare_statement = conexao.prepareStatement(sql);
+                prepare_statement.setObject(1, UUID.fromString(this.funcionarioId));
+                prepare_statement.setObject(2, UUID.fromString(this.clienteId));
+                prepare_statement.setDouble(3, this.valor);
+                prepare_statement.setObject(4, UUID.fromString(this.pagamentoId));
+                System.out.println(prepare_statement);
+                prepare_statement.execute();
+
+            }catch (Exception e){
+                throw new RuntimeException(e);
+            }
+
         }
         return  this.id;
     }

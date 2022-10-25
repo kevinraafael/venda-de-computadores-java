@@ -1,6 +1,7 @@
 package com.example.vendadecomputadoresjdbc;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -67,18 +68,20 @@ public class itemVenda {
     }
 
     public void insert(Connection conexao) {
-        String sql = "INSERT INTO itemvenda (qtdvendida, valorvendido, vendaid,computadorid) VALUES " +
-        "('"+this.qtdVendida+"','"+this.valorVendido+"','"+this.vendaID+"','"+this.computadorId+"')";
+        String sql = "INSERT INTO itemvenda (qtdvendida, valorvendido, vendaid,computadorid) VALUES (?,?,?,?)";
 
-        try {
-            ResultSet resultSet = conexao.createStatement().executeQuery(sql);
-            System.out.println(resultSet);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+        if (conexao != null) {
+            try {
+                PreparedStatement prepare_statement = conexao.prepareStatement(sql);
+                prepare_statement.setInt(1, this.qtdVendida);
+                prepare_statement.setDouble(2, this.valorVendido);
+                prepare_statement.setObject(3, UUID.fromString(this.vendaID));
+                prepare_statement.setObject(4, UUID.fromString(this.computadorId));
+                System.out.println(prepare_statement);
+                prepare_statement.execute();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
-    }
-
-    public void criaItem() {
-        
     }
 }
