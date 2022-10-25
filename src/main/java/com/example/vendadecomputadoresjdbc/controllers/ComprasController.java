@@ -6,7 +6,10 @@ import com.example.vendadecomputadoresjdbc.entities.Pagamento;
 import com.example.vendadecomputadoresjdbc.entities.Venda;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 
@@ -16,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ComprasController {
+public class ComprasController implements Initializable {
         @FXML
         private RadioButton formaPagamento;
 
@@ -62,11 +65,20 @@ public class ComprasController {
                 Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres","postgres","senha@123");
                 conexao.realizaConexao();
                 Pagamento pag = new Pagamento(100.3,66.6,1,"descricao");
-                pag.insert(conexao.getConnection());
+                //pag.insert(conexao.getConnection());
                 Venda v = new Venda("5b6c3c52-eb0f-46cd-b13b-c3a2dcc7c5c2","105c63c9-51de-4542-90ee-92e1ee1c92be",1000,pag.getId());
-                v.insert(conexao.getConnection());
+               // v.insert(conexao.getConnection());
                 ItemVenda itemVenda = new ItemVenda(1,100,v.getId(),"7314581c-08ea-4370-91f2-3d40a5225863");
                 itemVenda.insert(conexao.getConnection());
+        }
+
+        @FXML
+        protected void informationDialogVenda(ActionEvent event) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Sucesso!");
+                alert.setHeaderText("Venda concluída com SUCESSO!");
+                alert.setContentText("Pagamento á vista em dinheiro");
+                alert.showAndWait();
         }
 }
 

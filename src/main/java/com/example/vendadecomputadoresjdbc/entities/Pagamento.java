@@ -36,24 +36,24 @@ public class Pagamento {
         this.id = id;
     }
 
-    public void insert(Connection conexao){
-        String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES (?,?,?,?) RETURNING id";
-        if(conexao != null){
-            try {
-                PreparedStatement prepare_statement = conexao.prepareStatement(sql);
-                prepare_statement.setDouble(1,this.valorTotal);
-                prepare_statement.setDouble(2,this.desconto);
-                prepare_statement.setInt(3, this.parcelamento);
-                prepare_statement.setString(4,this.descricao);
-                System.out.println(prepare_statement);
-                ResultSet set = prepare_statement.executeQuery();
-                if(set.next()){
-                    this.setId(set.getString(1));
-                }
-            }catch (Exception e){
-                throw new RuntimeException(e);
-            }
-
-        }
-    }
+//    public void insert(Connection conexao){
+//        String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES (?,?,?,?) RETURNING id";
+//        if(conexao != null){
+//            try {
+//                PreparedStatement prepare_statement = conexao.prepareStatement(sql);
+//                prepare_statement.setDouble(1,this.valorTotal);
+//                prepare_statement.setDouble(2,this.desconto);
+//                prepare_statement.setInt(3, this.parcelamento);
+//                prepare_statement.setString(4,this.descricao);
+//                System.out.println(prepare_statement);
+//                ResultSet set = prepare_statement.executeQuery();
+//                if(set.next()){
+//                    this.setId(set.getString(1));
+//                }
+//            }catch (Exception e){
+//                throw new RuntimeException(e);
+//            }
+//
+//        }
+//    }
 }
