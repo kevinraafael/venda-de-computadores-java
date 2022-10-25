@@ -13,6 +13,8 @@ public class Computador {
     private String processador;
     private String memoria;
     private String armazenamento;
+
+    private Float valor;
     private String so;
 
     public String getId() {
@@ -55,6 +57,14 @@ public class Computador {
         this.armazenamento = armazenamento;
     }
 
+    public Float getValor() {
+        return valor;
+    }
+
+    public void setValor(Float valor) {
+        this.valor = valor;
+    }
+
     public String getSo() {
         return so;
     }
@@ -68,7 +78,9 @@ public class Computador {
         List<Computador> listaDeComputadores = new ArrayList<Computador>();
         try {
             ResultSet resultSet = conexao.createStatement().executeQuery(sql);
+
             while (resultSet.next()) {
+                double random= ((Math.random() * (4000 - 1500)) + 1500);
                 Computador computador = new Computador();
                 computador.setId(resultSet.getString("id"));
                 computador.setModelo(resultSet.getString("modelo"));
@@ -76,6 +88,7 @@ public class Computador {
                 computador.setMemoria(resultSet.getString("memoria"));
                 computador.setArmazenamento(resultSet.getString("armazenamento"));
                 computador.setSo(resultSet.getString("armazenamento"));
+                computador.setValor((float)random);
                 listaDeComputadores.add(computador);
             }
                return  listaDeComputadores;

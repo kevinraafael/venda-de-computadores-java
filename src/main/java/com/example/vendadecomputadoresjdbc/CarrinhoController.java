@@ -23,7 +23,10 @@ public class CarrinhoController implements Initializable {
     private TextField cpfCliente;
 
     @FXML
-    private Label nomeCliente;
+    private Label nomeEncontrado ;
+    @FXML
+    private Label nomeCliente = new Label();
+
 
     @FXML
     private GridPane listaComputador;
@@ -44,27 +47,27 @@ public class CarrinhoController implements Initializable {
     @FXML
     protected void buscaCliente(ActionEvent event) throws SQLException, ClassNotFoundException {
 
-        // Pessoa p = new Pessoa();
-        // Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres",
-        // "postgres",
-        // "1234");
-        // conexao.realizaConexao();
-        // Pessoa pessoa = new Pessoa();
-        // try {
-        // p.buscaPessoa(cpfCliente.getText(), conexao.getConnection());
-        // Cliente cliente = new Cliente();
-        // cliente.verificaSeECliente(cpfCliente.getText(), conexao);
-        // nomeCliente.setText(p.getNome());
-        // conexao.getConnection().close();
-        // } catch (Exception e) {
-        // informationDialog(event, "Ocorreu um erro", e.toString(),
-        // "Por favor adicione o cliente");
-        // }
+         Pessoa p = new Pessoa();
+         Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres",
+         "postgres",
+         "1234");
+         conexao.realizaConexao();
+
+         try {
+         Pessoa pessoaEncontrada = p.buscaPessoa(cpfCliente.getText(), conexao.getConnection());
+         Cliente cliente = new Cliente();
+         cliente.verificaSeECliente(cpfCliente.getText(), conexao);
+             nomeCliente.setText(pessoaEncontrada.getNome());
+         conexao.getConnection().close();
+         } catch (Exception e) {
+         informationDialog(event, "Ocorreu um erro", e.toString(),
+         "Por favor adicione o cliente");
+         }
 
     }
 
     protected void informationDialog(ActionEvent event, String title, String headerText, String bottomText) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle(title);
         alert.setHeaderText(headerText);
         alert.setContentText(bottomText);
@@ -77,7 +80,7 @@ public class CarrinhoController implements Initializable {
 
             Conexao conexao = new Conexao("jdbc:postgresql://localhost:5432/postgres",
                     "postgres",
-                    "senha@123");
+                    "1234");
             conexao.realizaConexao();
             List<Computador> computadores = new Computador().getComputadores(conexao.getConnection());
 
@@ -88,24 +91,27 @@ public class CarrinhoController implements Initializable {
                     if (pcIndex == computadores.size() - 1) {
                         String pcTitle = computadores.get(pcIndex).getModelo() + " "
                                 + computadores.get(pcIndex).getProcessador();
+                        String pcValor = computadores.get(pcIndex).getValor().toString();
 
                         listaComputador.add(
-                                new ComputadorComponent("/assets/PC.jpg", pcTitle, "10.0",
+                                new ComputadorComponent("/assets/PC.jpg", pcTitle, pcValor,
                                         totalCarrinho, totalQntCarrinho),
                                 collIndex, rowIndex);
                         return;
                     } else {
                         String pcTitle = computadores.get(pcIndex).getModelo() + " "
                                 + computadores.get(pcIndex).getProcessador();
+                        String pcValor = computadores.get(pcIndex).getValor().toString();
 
                         listaComputador.add(
-                                new ComputadorComponent("/assets/PC.jpg", pcTitle, "10.0",
+                                new ComputadorComponent("/assets/PC.jpg", pcTitle, pcValor,
                                         totalCarrinho, totalQntCarrinho),
                                 collIndex, rowIndex);
                     }
 
                 }
             }
+
             conexao.getConnection().close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
