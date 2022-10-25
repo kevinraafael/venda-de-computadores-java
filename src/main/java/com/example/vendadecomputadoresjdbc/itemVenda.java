@@ -1,10 +1,16 @@
 package com.example.vendadecomputadoresjdbc;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 public class itemVenda {
     private int qtdVendida;
     private float valorVendido;
+    private String vendaID;
     private ArrayList<Computador> computadores = new ArrayList<>();
 
     public itemVenda() {
@@ -55,8 +61,20 @@ public class itemVenda {
         return this;
     }
 
-    // TODO
-    public void criaItem() {
+    public void insert(Connection conexao) {
+        String sql = "INSERT INTO itemvenda (qtdvendida, valorvendido, vendaid) VALUES " +
+        "('"+this.qtdVendida+"','"+this.valorVendido+"','"+this.vendaID+"')";
+       
+        List<ItemVenda> listaDeItemVendas = new ArrayList<ItemVenda>();
+        try {
+            ResultSet resultSet = conexao.createStatement().executeQuery(sql);
+            System.out.println(resultSet);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
+    public void criaItem() {
+        
     }
 }
