@@ -10,7 +10,7 @@ import java.util.List;
 public class Computador {
     private String id;
     private String modelo;
-    private  String processador;
+    private String processador;
     private String memoria;
     private String armazenamento;
     private String so;
@@ -77,16 +77,11 @@ public class Computador {
                 computador.setArmazenamento(resultSet.getString("armazenamento"));
                 computador.setSo(resultSet.getString("armazenamento"));
                 listaDeComputadores.add(computador);
-
-                System.out.println(computador.getModelo());
-               listaDeComputadores.add(computador);
-               return  listaDeComputadores;
             }
+               return  listaDeComputadores;
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        } finally{
+            conexao.close();
         }
-        conexao.close();
-        return null;
-    }
-
-}
+}}
