@@ -6,10 +6,13 @@ import java.sql.SQLException;
 
 public class Pagamento {
 
+    private String id;
     private Double valorTotal;
     private Double desconto;
     private int parcelamento;
     private String descricao;
+
+
 
     public Pagamento(){
 
@@ -22,16 +25,25 @@ public class Pagamento {
         this.descricao = descricao;
     }
 
-    public String insert(Connection conexao){
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void insert(Connection conexao){
         String sql = "INSERT INTO pagamento (valortotal,desconto,parcelamento,descricao) VALUES " +
                 "('"+this.valorTotal+"','"+this.desconto+"','"+this.parcelamento+"','"+this.descricao+"')";
         try {
             ResultSet resultSet = conexao.createStatement().executeQuery(sql);
-
-            System.out.println(resultSet);//
+            this.setId(resultSet.getString("id"));
+            if(resultSet.next()){
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-    return  "id";
     }
 }

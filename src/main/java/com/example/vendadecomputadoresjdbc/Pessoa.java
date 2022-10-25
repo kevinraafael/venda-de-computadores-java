@@ -59,8 +59,9 @@ public class Pessoa {
         try {
 
             ResultSet resultSet = conexao.createStatement().executeQuery(sql);
+            Pessoa pessoa = new Pessoa();
             if (resultSet.next()) {
-                Pessoa pessoa = new Pessoa();
+
                 pessoa.setId(resultSet.getString("id"));
                 pessoa.setCpf(resultSet.getString("cpf"));
                 pessoa.setNome(resultSet.getString("nome"));
@@ -68,13 +69,14 @@ public class Pessoa {
                 pessoa.setTelefone(resultSet.getString("telefone"));
 
                 System.out.println(pessoa.getNome());
-                 return  pessoa;
+
 
             }
+            return  pessoa;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
-        return null;
+
     }
 }

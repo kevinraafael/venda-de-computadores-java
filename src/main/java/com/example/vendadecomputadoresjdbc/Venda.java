@@ -21,10 +21,11 @@ public class Venda {
 
     private double valor;
 
-    public Venda(String clienteId, String funcionarioId, double valor) {
+    public Venda(String clienteId, String funcionarioId, double valor, String pagamentoId) {
         this.clienteId = clienteId;
         this.funcionarioId = funcionarioId;
         this.valor = valor;
+        this.pagamentoId = pagamentoId;
     }
 
     public String getId() {
@@ -64,17 +65,16 @@ public class Venda {
      * @param conexao
      */
     public String insert(Connection conexao){
-        String sql = "INSERT INTO venda (funcionarioid,clienteid,valor) VALUES " +
-                "('"+this.funcionarioId+"','"+this.clienteId+"','"+this.valor+"')";
-        String id ;
+        String sql = "INSERT INTO venda (funcionarioid,clienteid,valor,pagamentoid) VALUES " +
+                "('"+this.funcionarioId+"','"+this.clienteId+"','"+this.valor+"','"+this.pagamentoId+"')";
         try {
             ResultSet resultSet = conexao.createStatement().executeQuery(sql);
-            id = resultSet.getString("id");
+            this.id = resultSet.getString("id");
             System.out.println(resultSet);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return  id;
+        return  this.id;
     }
 
     /**

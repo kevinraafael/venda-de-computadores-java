@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Criação de tela de finalizar vendas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Venda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/assets/PC.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Computador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/CarrinhoDeCompras.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/Compras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/Compras.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java" afterDir="false" />
+=======
+    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Valor computador">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" afterDir="false" />
+>>>>>>> fc26e2dd0d61c4ec2815cda52b0f779b3743a55e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +67,10 @@
   </component>
   <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.vendadecomputadoresjdbc.MainApplication" />
-      <module name="venda-de-computadores-java" />
+      <module name="venda-de-computadores-jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.vendadecomputadoresjdbc.*" />
@@ -101,7 +104,14 @@
       <workItem from="1666566585292" duration="496000" />
       <workItem from="1666558522143" duration="8257000" />
       <workItem from="1666576485756" duration="5842000" />
+      <workItem from="1666654872234" duration="5030000" />
       <workItem from="1666654872234" duration="2051000" />
+<<<<<<< HEAD
+      <workItem from="1666661694798" duration="168000" />
+      <workItem from="1666661883063" duration="5760000" />
+=======
+      <workItem from="1666662344243" duration="5525000" />
+>>>>>>> fc26e2dd0d61c4ec2815cda52b0f779b3743a55e
     </task>
     <task id="LOCAL-00001" summary="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;">
       <created>1666496943962</created>
@@ -110,7 +120,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666496943962</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Valor computador">
+      <created>1666668031406</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666668031406</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Criação do ComputadorComponente, metodo que atualiza total e qntTotal do carrinho.">
+      <created>1666658260329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666658260329</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Alteração pasta da imagem">
+      <created>1666660968987</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666660968987</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Alteração pasta da imagem">
+      <created>1666661801293</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666661801293</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +168,49 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;" />
     <MESSAGE value="Criação de tela de finalizar vendas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação de tela de finalizar vendas" />
+    <MESSAGE value="Valor computador" />
+    <option name="LAST_COMMIT_MESSAGE" value="Valor computador" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/Pessoa.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/CarrinhoController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.example.vendadecomputadoresjdbc.Cliente" memberName="id" />
+        <PinnedItemInfo parentTag="com.example.vendadecomputadoresjdbc.Cliente" memberName="pessoa" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
