@@ -2,15 +2,15 @@ package com.example.vendadecomputadoresjdbc;
 
 import java.util.ArrayList;
 
-public class ItemVenda {
+public class itemVenda {
     private int qtdVendida;
     private float valorVendido;
     private ArrayList<Computador> computadores = new ArrayList<>();
 
-    public ItemVenda() {
+    public itemVenda() {
     }
 
-    public ItemVenda(int qtdVendida, float valorVendido, ArrayList<Computador> computadores) {
+    public itemVenda(int qtdVendida, float valorVendido, ArrayList<Computador> computadores) {
         this.qtdVendida = qtdVendida;
         this.valorVendido = valorVendido;
         this.computadores = computadores;
@@ -40,17 +40,17 @@ public class ItemVenda {
         this.computadores = computadores;
     }
 
-    public ItemVenda qtdVendida(int qtdVendida) {
+    public itemVenda qtdVendida(int qtdVendida) {
         setQtdVendida(qtdVendida);
         return this;
     }
 
-    public ItemVenda valorVendido(float valorVendido) {
+    public itemVenda valorVendido(float valorVendido) {
         setValorVendido(valorVendido);
         return this;
     }
 
-    public ItemVenda computadores(ArrayList<Computador> computadores) {
+    public itemVenda computadores(ArrayList<Computador> computadores) {
         setComputadores(computadores);
         return this;
     }
