@@ -11,15 +11,33 @@ public class itemVenda {
     private int qtdVendida;
     private float valorVendido;
     private String vendaID;
-    private ArrayList<Computador> computadores = new ArrayList<>();
+
+    private String computadorId;
+
+    public String getVendaID() {
+        return vendaID;
+    }
+
+    public void setVendaID(String vendaID) {
+        this.vendaID = vendaID;
+    }
+
+    public String getComputadorId() {
+        return computadorId;
+    }
+
+    public void setComputadorId(String computadorId) {
+        this.computadorId = computadorId;
+    }
 
     public itemVenda() {
     }
 
-    public itemVenda(int qtdVendida, float valorVendido, ArrayList<Computador> computadores) {
+    public itemVenda(int qtdVendida, float valorVendido, String vendaId,String computadorId) {
         this.qtdVendida = qtdVendida;
         this.valorVendido = valorVendido;
-        this.computadores = computadores;
+        this.vendaID = vendaId;
+        this.computadorId = computadorId;
     }
 
     public int getQtdVendida() {
@@ -38,14 +56,6 @@ public class itemVenda {
         this.valorVendido = preco;
     }
 
-    public ArrayList<Computador> getComputadores() {
-        return this.computadores;
-    }
-
-    public void setComputadores(ArrayList<Computador> computadores) {
-        this.computadores = computadores;
-    }
-
     public itemVenda qtdVendida(int qtdVendida) {
         setQtdVendida(qtdVendida);
         return this;
@@ -56,16 +66,10 @@ public class itemVenda {
         return this;
     }
 
-    public itemVenda computadores(ArrayList<Computador> computadores) {
-        setComputadores(computadores);
-        return this;
-    }
-
     public void insert(Connection conexao) {
-        String sql = "INSERT INTO itemvenda (qtdvendida, valorvendido, vendaid) VALUES " +
-        "('"+this.qtdVendida+"','"+this.valorVendido+"','"+this.vendaID+"')";
-       
-        List<ItemVenda> listaDeItemVendas = new ArrayList<ItemVenda>();
+        String sql = "INSERT INTO itemvenda (qtdvendida, valorvendido, vendaid,computadorid) VALUES " +
+        "('"+this.qtdVendida+"','"+this.valorVendido+"','"+this.vendaID+"','"+this.computadorId+"')";
+
         try {
             ResultSet resultSet = conexao.createStatement().executeQuery(sql);
             System.out.println(resultSet);
