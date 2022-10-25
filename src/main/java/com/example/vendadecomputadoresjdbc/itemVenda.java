@@ -1,16 +1,22 @@
 package com.example.vendadecomputadoresjdbc;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
-public class ItemVenda {
+public class itemVenda {
     private int qtdVendida;
     private float valorVendido;
+    private String vendaID;
     private ArrayList<Computador> computadores = new ArrayList<>();
 
-    public ItemVenda() {
+    public itemVenda() {
     }
 
-    public ItemVenda(int qtdVendida, float valorVendido, ArrayList<Computador> computadores) {
+    public itemVenda(int qtdVendida, float valorVendido, ArrayList<Computador> computadores) {
         this.qtdVendida = qtdVendida;
         this.valorVendido = valorVendido;
         this.computadores = computadores;
@@ -40,23 +46,35 @@ public class ItemVenda {
         this.computadores = computadores;
     }
 
-    public ItemVenda qtdVendida(int qtdVendida) {
+    public itemVenda qtdVendida(int qtdVendida) {
         setQtdVendida(qtdVendida);
         return this;
     }
 
-    public ItemVenda valorVendido(float valorVendido) {
+    public itemVenda valorVendido(float valorVendido) {
         setValorVendido(valorVendido);
         return this;
     }
 
-    public ItemVenda computadores(ArrayList<Computador> computadores) {
+    public itemVenda computadores(ArrayList<Computador> computadores) {
         setComputadores(computadores);
         return this;
     }
 
-    // TODO
-    public void criaItem() {
+    public void insert(Connection conexao) {
+        String sql = "INSERT INTO itemvenda (qtdvendida, valorvendido, vendaid) VALUES " +
+        "('"+this.qtdVendida+"','"+this.valorVendido+"','"+this.vendaID+"')";
+       
+        List<ItemVenda> listaDeItemVendas = new ArrayList<ItemVenda>();
+        try {
+            ResultSet resultSet = conexao.createStatement().executeQuery(sql);
+            System.out.println(resultSet);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
+    public void criaItem() {
+        
     }
 }
