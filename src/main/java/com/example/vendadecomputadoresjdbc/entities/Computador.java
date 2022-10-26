@@ -72,6 +72,12 @@ public class Computador {
         this.so = so;
     }
 
+    @Override
+    public String toString(){
+        String computadorInfo =  "Modelo: "+getModelo()+"/n"+"Processador: "+getProcessador()+"\n"
+                +"Memória: "+getMemoria()+"Armazenamento: "+getArmazenamento()+" SO: "+getSo();
+        return computadorInfo;
+    }
     public List<Computador> getComputadores(Connection conexao) throws SQLException {
         String sql = "select * from computador";
         List<Computador> listaDeComputadores = new ArrayList<Computador>();
