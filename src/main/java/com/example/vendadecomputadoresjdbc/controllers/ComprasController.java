@@ -20,8 +20,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class ComprasController implements Initializable {
-        @FXML
-        private RadioButton formaPagamento;
+//        @FXML
+////        private RadioButton formaPagamento;
 
         @FXML
         private ListView<Computador> lvComputador;
