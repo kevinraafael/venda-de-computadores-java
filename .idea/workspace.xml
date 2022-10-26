@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Mensagem 'Venda cocluida co sucesso', ListView mostrando lista">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/controllers/ComprasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/controllers/ComprasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Pagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Venda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/Compras.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/vendadecomputadoresjdbc/Compras.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Computador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Computador.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,8 +33,24 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="develop2" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-11.0.16.1/lib/src.zip!/java.base/java/lang/Object.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-11.0.16.1/lib/src.zip!/java.base/jdk/internal/reflect/UnsafeFieldAccessorImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-11.0.16.1/lib/src.zip!/java.base/jdk/internal/reflect/UnsafeObjectFieldAccessorImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-sources.jar!/com/sun/javafx/application/LauncherImpl.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2GRXEjIW6tW2GkVbvGeetQgJJGW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,8 +85,10 @@
   </component>
   <component name="RunManager">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.vendadecomputadoresjdbc.MainApplication" />
-      <module name="venda-de-computadores-java" />
+      <module name="venda-de-computadores-jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.vendadecomputadoresjdbc.controllers.*" />
