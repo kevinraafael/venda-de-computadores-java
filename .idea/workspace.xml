@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Mensagem 'Venda cocluida co sucesso', ListView mostrando lista">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/dao/ClienteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/dao/FuncionarioDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/dao/ItemVendaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/dao/PagamentoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/dao/PessoaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/dao/VendaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/entities/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/repository/FuncionarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/repository/ItemVendaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/repository/PagamentoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/repository/PessoaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/vendadecomputadoresjdbc/repository/VendaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9014c49e-48a8-4c64-9f2a-fde8fcc366ea" name="Changes" comment="Utilização do hibernate">
+      <change afterPath="$PROJECT_DIR$/spring/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/java/com/example/spring/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/src/test/java/com/example/spring/ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +34,30 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="develop2" />
-      </list>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -64,32 +72,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "/home/davi/IdeaProjects/venda-de-computadores-java/spring/src/main/java/com/example/spring/postgres.yml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "2a2d595e6ed9a0b24f027f2b63b134d6"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring/src/main/java/com/example/spring" />
+      <recent name="$PROJECT_DIR$/spring/src/main/java/com/example/spring/entities" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring/src" />
+      <recent name="$PROJECT_DIR$/spring/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spring/src/main/java/com/example/spring" />
       <recent name="C:\Users\Kevin\IdeaProjects\venda-de-computadores-jdbc\src\main\assets" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.vendadecomputadoresjdbc.controllers" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.spring" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Programa">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -105,9 +130,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Programa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring.Programa" />
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.spring.Test" />
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.spring.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Postgres" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="spring/src/main/java/com/example/spring/postgres.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring/postgres.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="spring/src/main/java/com/example/spring/postgres.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring/postgres.yml.postgresql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgresql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="spring/src/main/java/com/example/spring/postgres.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Programa" />
+      <item itemvalue="Application.MainApplication" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Docker.Postgres" />
+      <item itemvalue="Docker.spring/postgres.yml.postgresql: Compose Deployment" />
+      <item itemvalue="Docker.spring/postgres.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.Application" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Programa" />
+        <item itemvalue="Docker.spring/postgres.yml: Compose Deployment" />
+        <item itemvalue="Docker.spring/postgres.yml.postgresql: Compose Deployment" />
         <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +233,9 @@
       <workItem from="1666654872234" duration="2051000" />
       <workItem from="1666717683208" duration="6452000" />
       <workItem from="1666725055062" duration="3713000" />
-      <workItem from="1667330758069" duration="3995000" />
+      <workItem from="1667330758069" duration="4816000" />
+      <workItem from="1667472073363" duration="1110000" />
+      <workItem from="1667473190116" duration="14621000" />
     </task>
     <task id="LOCAL-00001" summary="Atualização da tela Carrinho de compras, add computadores, valor total, quantidade de itens no carrinho,e botão de &quot;Finalizar compras&quot;">
       <created>1666496943962</created>
@@ -175,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666723923522</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Repositorio e Dao">
+      <created>1667335158673</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667335158673</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Utilização do hibernate">
+      <created>1667488578875</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667488578875</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +329,9 @@
     <MESSAGE value="item venda" />
     <MESSAGE value="Inserção" />
     <MESSAGE value="Mundança de tela funcionando, reorganização dos arquivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mundança de tela funcionando, reorganização dos arquivos" />
+    <MESSAGE value="Repositorio e Dao" />
+    <MESSAGE value="Utilização do hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Utilização do hibernate" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
